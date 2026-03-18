@@ -108,6 +108,9 @@ export default function Home() {
           <span className="logo-bracket">]</span>
         </div>
         <p className="decode-tagline">Tech, explained like someone who gets it.</p>
+        <nav className="decode-nav">
+          <a href="/about" className="nav-link">About</a>
+        </nav>
       </header>
 
       {!response && (
@@ -265,9 +268,26 @@ export default function Home() {
           .decode-tagline {
             margin: 0.6rem 0 0;
             font-size: 1rem;
-            color: #7a6e58;
+            color: #a8987c;
             font-style: italic;
             letter-spacing: 0.2em;
+          }
+
+          .decode-nav {
+            margin-top: 0.75rem;
+          }
+
+          .nav-link {
+            font-family: 'Courier New', monospace;
+            font-size: 0.95rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: #a8987c;
+            text-decoration: none;
+          }
+
+          .nav-link:hover {
+            color: #c4a245;
           }
 
           /* Input Section */
@@ -324,7 +344,7 @@ export default function Home() {
           }
 
           .decode-textarea::placeholder {
-            color: #4a3f2e;
+            color: #98906e;
             font-style: italic;
           }
 
@@ -334,7 +354,7 @@ export default function Home() {
             margin-top: 0.4rem;
             font-family: 'Courier New', monospace;
             font-size: 0.72rem;
-            color: #4a3f2e;
+            color: #98906e;
           }
 
           .error-bar {
@@ -411,8 +431,8 @@ export default function Home() {
           }
 
           .no-account-note {
-            font-size: 0.8rem;
-            color: #4a3f2e;
+            font-size: 1rem;
+            color: #98906e;
             font-family: 'Courier New', monospace;
             margin: 0;
           }
@@ -438,7 +458,7 @@ export default function Home() {
           .echo-label {
             font-family: 'Courier New', monospace;
             font-size: 0.72rem;
-            color: #4a3f2e;
+            color: #98906e;
             text-transform: uppercase;
             letter-spacing: 0.08em;
           }
@@ -446,7 +466,7 @@ export default function Home() {
           .echo-text {
             margin: 0.3rem 0 0;
             font-size: 0.9rem;
-            color: #6a5e48;
+            color: #a8987c;
             font-style: italic;
             line-height: 1.5;
           }
@@ -478,7 +498,7 @@ export default function Home() {
           }
 
           .card-icon {
-            color: #5a4f3a;
+            color: #98906e;
             font-size: 0.85rem;
           }
 
@@ -488,14 +508,14 @@ export default function Home() {
             font-weight: bold;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: #7a6e58;
+            color: #a8987c;
             margin: 0;
           }
 
           .card-body {
             font-size: 1rem;
             line-height: 1.78;
-            color: #c8bfa8;
+            color: #d4c9b0;
             margin: 0;
             white-space: pre-wrap;
           }
@@ -516,8 +536,8 @@ export default function Home() {
           }
 
           .decode-footer p {
-            font-size: 0.8rem;
-            color: #3a3228;
+            font-size: 1rem;
+            color: #98906e;
             font-style: italic;
             margin: 0;
           }
