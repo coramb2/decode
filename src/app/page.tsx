@@ -113,6 +113,18 @@ export default function Home() {
         </nav>
       </header>
 
+
+      <div className="decode-welcome">
+        <p className="welcome-text">
+          Ask anything about technology — bills, notifications, suspicious texts,
+          error messages, settings you&apos;ve never understood. Someone who actually
+          gets it will explain it in plain language.
+        </p>
+        <p className="welcome-trust">
+          No account. Nothing saved. No ads. Ever.
+        </p>
+      </div>
+
       {!response && (
         <section className="decode-input-section">
           <div className="input-prompt">
@@ -288,6 +300,32 @@ export default function Home() {
 
           .nav-link:hover {
             color: #c4a245;
+          }
+
+          .decode-welcome {
+            text-align: center;
+            max-width: 560px;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+          }
+
+          .welcome-text {
+            font-size: 1rem;
+            line-height: 1.75;
+            color: #d4c9b0;
+            font-style: italic;
+            margin: 0;
+          }
+
+          .welcome-trust {
+            font-family: 'Courier New', monospace;
+            font-size: 1rem;
+            font-weight: bold;
+            color: #4a7a5a;
+            margin: 0;
+            letter-spacing: 0.04em;
           }
 
           /* Input Section */
